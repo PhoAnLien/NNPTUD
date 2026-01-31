@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Thực Tập 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Dashboard Quản Lý Sản Phẩm</h2>
+        
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Tìm tên sản phẩm...">
+            
+            <select id="sortSelect">
+                <option value="">Sắp xếp</option>
+                <option value="price-asc">Giá: Thấp đến Cao</option>
+                <option value="price-desc">Giá: Cao đến Thấp</option>
+                <option value="name-asc">Tên: A - Z</option>
+                <option value="name-desc">Tên: Z - A</option>
+            </select>
+
+            <select id="perPageSelect">
+                <option value="5">Hiện 5 dòng</option>
+                <option value="10" selected>Hiện 10 dòng</option>
+                <option value="20">Hiện 20 dòng</option>
+            </select>
+        </div>
+
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Hình ảnh</th>
+                    <th>Tiêu đề</th>
+                    <th>Giá ($)</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                </tbody>
+        </table>
+
+        <div id="pagination" class="pagination"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

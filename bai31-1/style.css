@@ -1,0 +1,17 @@
+body { font-family: 'Segoe UI', sans-serif; background: #f4f4f9; padding: 20px; }
+.container { max-width: 1000px; margin: auto; background: white; padding: 20px; border-radius: 8px; }
+.controls { display: flex; gap: 10px; margin-bottom: 20px; }
+input, select { padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 12px; border: 1px solid #eee; text-align: left; }
+th { background-color: #333; color: white; }
+
+tbody tr:nth-child(odd) { background-color: #ffffff; }
+tbody tr:nth-child(even) { background-color: #f2f2f2; }
+
+img { width: 60px; height: 60px; object-fit: contain; background: #eee; border-radius: 4px; }
+
+.pagination { margin-top: 20px; display: flex; gap: 5px; }
+.pagination button { padding: 5px 10px; cursor: pointer; border: 1px solid #ddd; background: white; }
+.pagination button.active { background: #333; color: white; }
